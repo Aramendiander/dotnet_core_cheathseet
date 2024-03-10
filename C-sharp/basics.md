@@ -85,9 +85,18 @@ myArray.Sum();
 myArray,Average();
 ```
 
+#### ForEach
+```cs
+Array.ForEach(myArr, element => Console.WriteLine(element);
+// Alternate multi line
+Array.ForEach(myArr, element => {
+    Console.WriteLine(element);
+};
+```
+
 #### Sort
 ```cs
-Array.Sort(myArray)
+Array.Sort(myArray);
 ```
 #### Exists
 Returns BOOLEAN value if the array has a value with the specificed condition
@@ -97,6 +106,60 @@ Array.Exists(myArray, element => condition );
 bool result = Array.Exists(myArray, element => element > 3); // If the array contains a number higher than 3 returns true
 ```
 #### Find
+Returns first element that matches the conditions
+```cs
+Array.Find(myArr, value => value > 3);
+```
 
+#### FindAll
+Returns all elements that matches the conditions in an Array.
+```cs
+Array.FindAll(myArr, value => value > 3);
+```
+
+#### IndexOf
+Returns the position of the first occurence of the searched element in an array
+```cs
+Array.IndexOf(myArr, "dog");
+```
+#### LasIndexOf
+Returns the position of the last occurence of the searched element in an array
+```cs
+Array.LastIndexOf(myArr, "dog");
+```
+
+#### Resize
+Changes the number of elements of a one-dimensional array to the specified new size
+If resizing to a larger size, new values will be empty unless values are assigned
+If resizing to a smaller, removes content from the end of the array
+```cs
+Array.Resize(ref myArr, 4);
+```
+
+#### Reverse
+Reverse the array
+```cs
+Array.Reverse(myArr);
+```
+
+#### Clear
+Clear contents of array
+```cs
+Array.Clear(myArr); // Clears entire array
+Array.Clear(MyArr, startIndex, length); // Clears range between starting index and number of elements to clear
+```
 
 ## String manipulation
+
+### Escaping
+```cs
+string fooString = "\"escape\" quotes and add \n (new lines) and \t (tabs)";
+string verbatimPath = @"C:\Users\User\Desktop"; //Escape the whole string
+```
+### String interpolation
+```cs
+string myName = "John Doe";
+Console.WriteLine($"My name is: {myName}.");
+```
+
+
