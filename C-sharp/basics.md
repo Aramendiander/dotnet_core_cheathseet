@@ -162,4 +162,15 @@ string myName = "John Doe";
 Console.WriteLine($"My name is: {myName}.");
 ```
 
+### Replace
+Replaces value in string
+```cs
+text = text.Replace("This", "That"); 
+```
 
+### Contains
+Return true if text contains value
+```cs
+string myText = "Hello World!";
+myText.Contains("Hello"); //Returns true
+```
