@@ -2,7 +2,7 @@
 
 ## Data types
 ### Numeric
-####Bytes
+#### Bytes
 ```cs
 byte myUnsignedByte = 8; // Size: 8 bits  | Range: 0 to 255
 sbyte mySignedByte = -8; // Size: 8 bits  | Range: -128 to +127
@@ -74,4 +74,29 @@ int[][] jaggedArray2 = new int[][]
     new int[] {4, 5, 6, 7, 8} 
 };
 ```
+
+### Array methods
+[Documentation](#https://learn.microsoft.com/en-us/dotnet/api/system.array.constrainedcopy?view=net-7.0)
+#### Max, Min, Average and Sum
+```cs
+myArray.Max();
+myArray.Min();
+myArray.Sum();
+myArray,Average();
+```
+
+#### Sort
+```cs
+Array.Sort(myArray)
+```
+#### Exists
+Returns BOOLEAN value if the array has a value with the specificed condition
+```cs
+Array.Exists(myArray, element => condition );
+// Example
+bool result = Array.Exists(myArray, element => element > 3); // If the array contains a number higher than 3 returns true
+```
+#### Find
+
+
 ## String manipulation
