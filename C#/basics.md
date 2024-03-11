@@ -1,5 +1,13 @@
 # C# Basics
 
+## Table of contents
+* [Data types](#data-types)
+  * [Numeric](#numeric)
+  * [Text](#numeric)
+  * [Arrays](#arrays)
+  * [Array Methods](#array-methods)
+  * [String Manipulation](#string-manipulation)
+
 ## Data types
 ### Numeric
 #### Bytes
@@ -122,7 +130,7 @@ Returns the position of the first occurence of the searched element in an array
 ```cs
 Array.IndexOf(myArr, "dog");
 ```
-#### LasIndexOf
+#### LastIndexOf
 Returns the position of the last occurence of the searched element in an array
 ```cs
 Array.LastIndexOf(myArr, "dog");
